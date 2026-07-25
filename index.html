@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+<body>
+    <header class="header">
+        <h1> Hunger's Hunt</h1>
+        <nav>
+            <a href="index.html">
+                <i class="fa-solid fa-bars"></i>
+                Home</a>
+            <a href="Resturants.html">Resturant</a>
+            <a href="Web_info.html">
+                <i class="fa-solid fa-circle-info"></i>
+                Web Info</a>
+        </nav>
+    </header>
+    <section class="search">
+        <h2>Find Best Foody Place</h2>
+        <input type="text" id="searchInput" placeholder="Search Resturant....">
+        <button>search</button>
+        
+
+    </section>
+    
+    <div class="filter">
+        <button onclick="filterCards('all')">All</button>
+        <button onclick="filterCards('burger')">Burger</button>
+        <button onclick="filterCards('pizza ')">Pizza</button>
+        <button onclick="filterCards('cafe')">Cafe</button>
+        <button onclick="filterCards('dinner')">Dinner</button>
+
+    </div>
+
+    <section class ="food_section">
+        <h2 class="title">Pocket Friendly& Tasty</h2>
+        <div class="container">
+            <div class="card" data-category="all">
+                <img src="New folder/salman.png">
+                <h2>Salman Baker</h2>
+                <p>Gulbahar</p> 
+                <a href="(091) 2606002">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091) 2606002</a>
+                <a  class="btn" href="https://maps.app.goo.gl/xaLQ8jEkJHBLiA168?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="all">
+                <img src="New folder/salman.png">
+                <h2>Salman Baker</h2>
+                <p>Dalazak Road</p>
+                <a href="(091) 2602908">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091) 2602908</a>
+                <a  class="btn" href="https://maps.app.goo.gl/rKe8thPtGMnby8XD6?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="all">
+                <img src="New folder/salman.png">
+                <h2>Salman Baker</h2>
+                <p>Quaidabad Qisa Khawani</p>
+                <a href="(091) 2565009">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091) 2565009</a>
+                <a  class="btn" href="https://maps.app.goo.gl/ZG3Q5iVHLfjSn68K6?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section class="food_section">
+        <h2 class="title">Fast Food</h2>
+        <div class="container">
+            <div class="card" data-category="pizza burger">
+                <img src="New folder/KFC.png">
+                <h2>KFC</h2>
+                <p>University Road</p>
+                <a href="(091)111 532 532">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091)111 532 532</a>
+                <a  class="btn" href="https://maps.app.goo.gl/TEUDrzkcQmn3fBmN8?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="pizza burger">
+                <img src="New folder/box.png">
+                <h2>Pizza Box</h2>
+                <p>Gulbahar</p>
+                <a href="+92 3366420086">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +92 3366420086</a>
+                <a  class="btn" href="https://maps.app.goo.gl/C3fv1QosZrV5sQ8X8?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="pizza burger">
+                <img src="New folder/KFC.png">
+                <h2>KFC</h2>
+                <p>Ring Road</p>
+                <a href="(042) 111 532 532">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (042) 111 532 532</a>
+                <a  class="btn" href="https://maps.app.goo.gl/oqWyRegykfNPTanv6?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="pizza burger">
+                <img src="New folder/hungers.png">
+                <h2>Hunger's</h2>
+                <p>Gulbahar</p>
+                <a href="0334 32111111">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    0334 32111111</a>
+                <a  class="btn" href="https://maps.google.com/?cid=621337337496057813&entry=gps&g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="pizza burger">
+                <img src="New folder/cheez.png">
+                <h2>Cheezious</h2>
+                <p>Tehkal Road</p>
+                <a href="(091) 111 446 699">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091) 111 446 699</a>
+                <a  class="btn" href="https://maps.app.goo.gl/SsTpiDoByafYJsE87?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="pizza burger">
+                <img src="New folder/cheez.png">
+                <h2>Cheezious</h2>
+                <p>HBK Peshawar</p>
+                <a href="(091) 111 446 699">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091) 111 446 699 </a>
+                <a  class="btn" href="https://maps.app.goo.gl/ysKPvUeneSwZ6MeHA?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="pizza burger">
+                <img src="New folder/cheez.png">
+                <h2>Cheezious</h2>
+                <p>Gulbahar</p>
+                <a href="(091) 111 446 699">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091) 111 446 699</a>
+                <a  class="btn" href="https://maps.app.goo.gl/pYJnnH4VX3iEWBbc9?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="pizza burger">
+                <img src="New folder/chief.png">
+                <h2>Chief Burger</h2>
+                <p>Universty Road</p>
+                <a href="(091) 111 224 433">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091) 111 224 433</a>
+                <a  class="btn" href="https://maps.app.goo.gl/TshsvQz5uxQT53wAA?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="pizza burger">
+                <img src="New folder/Pizza Hut Logo.png">
+                <h2>Pizza Hut</h2>
+                <p>Garrison Park Rd</p>
+                <a href="03XXXXXXXXX">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    03XXXXXXXXX</a>
+                <a  class="btn" href="https://maps.app.goo.gl/gFFuetZ3KhHRPXKQ9?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="pizza burger">
+                <img src="New folder/Mr_ Cod.png">
+                <h2>Mr.Cod</h2>
+                <p>Gulbahar</p>
+                <a href="+92 333 6726342">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +92 333 6726342</a>
+            <a  class="btn" href="https://maps.app.goo.gl/sLR8gMeh865qrRoF6?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="pizza burger">
+                <img src="New folder/Mr_ Cod.png">
+                <h2>Mr.Cod</h2>
+                <p>Hayatabad Phase 6</p>
+                <a href="(091) 5813335">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091) 5813335</a>
+            <a  class="btn" href="https://maps.app.goo.gl/jY7hzYThZ6RZ3fjGA?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    <section class="food_section">
+        <h2 class="title">Cafee`</h2>
+        <div class="container">
+            <div class="card" data-category="all cafe">
+                <img src="New folder/downtown.png">
+                <h2>Down Town</h2>
+                <p>Tehkal Road</p>
+                <a href="(091) 5621086">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091) 5621086</a>
+                <a  class="btn" href="https://maps.app.goo.gl/sLrpHPraCVRKhuBG7?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="all cafe">
+                <img src="New folder/ovenza.png">
+                <h2>Ovenza</h2>
+                <p>Abdara Road</p>
+                <a href="+92 3285741158">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +92 3285741158</a>
+                <a  class="btn" href="https://maps.app.goo.gl/b3D19SSUsdAXssT58?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="all cafe">
+                <img src="New folder/black.png">
+                <h2>Black Caffee</h2>
+                <p>Gulbahar</p>
+                <a href="+92 3465426185">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +92 3465426185</a>
+                <a  class="btn" href="https://maps.app.goo.gl/JktQBgtAbQ5U6qvt7?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="all cafe">
+                <img src="New folder/olive.png">
+                <h2>Green Olive's</h2>
+                <p>Hayatabad</p>
+                <a href="+92 3339216175">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +92 3339216175</a>
+                <a  class="btn" href="https://maps.app.goo.gl/WSNc9oLKChqVgGAb9?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class ="food_section" >
+        <h2 class="title">Dinner Places</h2>
+        <div class="container">
+            <div class="card" data-category="dinner">
+                <img src="New folder/dragon.png">
+                <h2>Silver Dragon</h2>
+                <p>University Road</p>
+                <a href="(091) 5850854">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091) 5850854</a>
+                <a  class="btn" href="https://maps.app.goo.gl/wTdkWtV3vDA8CmuB6?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="dinner">
+                <img src="New folder/balana.png">
+                <h2>Balana Hut</h2>
+                <p>University Road</p>
+                <a href="+92 307 3555711">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +92 307 3555711</a>
+                <a  class="btn" href="https://maps.app.goo.gl/JVpuat94o3yGXY1H7?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="dinner">
+                <img src="New folder/yaseen malak.png">
+                <h2>Yaseen Maliak</h2>
+                <p>Ring Road Hazar Khawani</p>
+                <a href="+92 3143367335">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +92 3143367335</a>
+                <a  class="btn" href="https://maps.app.goo.gl/kKJ1K2PeEXroXbmq5?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="dinner">
+                <img src="New folder/bannu.png">
+                <h2>Banuu Beef Bulao</h2>
+                <p>University Road</p>
+                <a href="+92 3349989427">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +92 3349989427</a>
+                <a  class="btn" href="https://maps.app.goo.gl/ocYgAT6iRiKyKugCA?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="dinner">
+                <img src="New folder/habibi.png">
+                <h2>Habibi Resturant</h2>
+                <p>Garison Road</p>
+                <a href="(091) 5613730">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091) 5613730</a>
+                <a  class="btn" href="https://maps.app.goo.gl/vhGCjfFBpTZmH99s5?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <div class="card" data-category="dinner">
+                <img src="New folder/habibi.png">
+                <h2>Habibi Resturant</h2>
+                <p>Ring Road</p>
+                <a href="(091) 5604111">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (091) 5604111</a>
+                <a  class="btn" href="https://maps.app.goo.gl/X7pyBXQ1DtRhVKNs6?g_st=aw">View Location
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+    </section>
+    <div id="not_found" class="not_found" style = "display: none;">
+        <img src="New folder/not_found.png" alt="not found">
+        <h2> Not Found</h2>
+        <p>Try searching for a different resturant or Category</p>
+    </div>
+        
+<script src="search.js"></script>
+
+    
+    
+</body>
+</html>
