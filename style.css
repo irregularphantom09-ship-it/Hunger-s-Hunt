@@ -234,3 +234,11 @@ body{
     color:gray;
     font-size: 18px;
 }
+footer{
+    background-color: orange;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-weight: bold;
+    color: white;
+}
