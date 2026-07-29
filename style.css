@@ -433,15 +433,21 @@ footer p {
     .header nav {
         justify-content: center;
         gap: 10px;
+        flex-wrap: wrap;
+    }
+    .header nav a {
+        font-size: 0.85rem;
+        white-space: normal;
     }
 
     .search h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .search-box {
         flex-direction: column;
         align-items: stretch;
-        max-width: 300px;
+        gap: 10px;
+        max-width: 320px;
         margin: 0 auto;
     }
     .search-box input {
@@ -449,11 +455,13 @@ footer p {
     }
     .search-box button {
         width: 100%;
+        padding: 10px;
     }
 
     .filter button {
         padding: 8px 14px;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
+        margin: 4px;
     }
 
     .title {
@@ -461,7 +469,7 @@ footer p {
     }
 
     .container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);   
         gap: 12px;
         padding: 0 6px;
     }
@@ -470,25 +478,33 @@ footer p {
         padding: 10px;
     }
     .card h2 {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
     .card .type {
-        font-size: 0.7rem;
-    }
-    .card p {
         font-size: 0.75rem;
     }
+    .card p {
+        font-size: 0.8rem;
+    }
     .card a {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
     .btn {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
         padding: 6px 10px;
-        min-width: 70px;
+        min-width: 80px;
     }
 
-    .detail, .info, .feedback {
+    .not_found img {
+        max-width: 180px;
+    }
+
+    .info,
+    .detail,
+    .feedback {
+        width: 100%;
         padding: 15px;
+        border-radius: 8px;
     }
 }
 
