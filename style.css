@@ -508,8 +508,3 @@ footer p {
     }
 }
 
-@media (max-width: 360px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-}
