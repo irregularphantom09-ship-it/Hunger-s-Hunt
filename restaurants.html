@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - Hunger's Hunt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Hunger's Hunt</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#featured">Restaurants</a>
+                <a href="index.html#categories">Categories</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="restaurants-page">
+        <section class="food_section">
+            <h2 id="page-title" class="title"></h2>
+            <div class="search-wrapper">
+                <input type="text" id="restaurant-search" placeholder="Search restaurants...">
+                <button class="search-btn" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <p class="search-hint">Search by restaurant name.</p>
+            <div id="restaurant-container" class="restaurant-grid">
+                <div id="restaurant-loading" class="page-loading" role="status"><span class="pacman-loader" aria-hidden="true"><span></span><span></span><span></span><span></span></span><p>Loading restaurants...</p></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Hunger's Hunt. All rights reserved.</p>
+    </footer>
+
+    <script src="js/data.js" defer></script>
+    <script src="js/ui.js" defer></script>
+    <script src="js/restaurants.js" defer></script>
+</body>
+</html>

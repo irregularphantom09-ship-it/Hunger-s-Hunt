@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Hunger's Hunt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Hunger's Hunt</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#featured">Restaurants</a>
+                <a href="index.html#categories">Categories</a>
+                <a href="about.html" class="active">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <section class="about-hero">
+            <h1>About Hunger's Hunt</h1>
+            <p>Discover what we're about and why we built this platform.</p>
+        </section>
+
+        <section class="about-content">
+            <h2>What is Hunger's Hunt?</h2>
+            <p>Hunger's Hunt is a restaurant discovery platform that helps you choose a location, explore restaurants nearby, and find your next meal with confidence.</p>
+
+            <h2>How discovery works</h2>
+            <p>The application combines a curated Hunger's Hunt catalogue with live place discovery. The curated catalogue currently highlights restaurants in Peshawar, while live discovery currently uses OpenStreetMap-based data for other locations.</p>
+
+            <p>This is an early version of the project, so some live places may have incomplete images, ratings, phone numbers, or descriptions depending on the available source data. We are actively improving the restaurant information, interface, and overall experience as Hunger's Hunt evolves.</p>
+
+            <p>Live place classifications come from external mapping data, so a venue may occasionally appear as a restaurant or cafe even when people would describe it as a hotel, food stall, market venue, or another type of place. Curated Hunger's Hunt entries are maintained separately, and we continue refining how external information is presented.</p>
+
+            <p>OpenStreetMap currently powers live discovery. Foursquare remains part of the provider architecture for a future switch-back when its service access is available again.</p>
+
+            <h2>Why did we build this?</h2>
+            <p>We noticed that finding a good restaurant often means scrolling through endless reviews, checking multiple websites, and still feeling unsure. We wanted to create a single, clean place where you can:</p>
+            <ul>
+                <li>Discover restaurants by category, cuisine, or location.</li>
+                <li>See ratings for service and taste/price.</li>
+                <li>View photos, descriptions, and contact details.</li>
+                <li>Get directions with a single click.</li>
+            </ul>
+
+            <h2>What you can discover</h2>
+            <p>Our platform currently highlights restaurants across several categories. As we grow, we aim to cover more cuisines and regions. You can explore:</p>
+            <ul>
+                <li><strong>Featured restaurants:</strong> Hand-picked spots we think you'll love.</li>
+                <li><strong>Popular choices:</strong> Restaurants that have received high ratings from users.</li>
+                <li><strong>Categories:</strong> Filter by Fast Food, Café, Pakistani, Chinese, and more.</li>
+            </ul>
+
+            <h2>Our mission</h2>
+            <p>Our mission is simple: connect food lovers with great restaurants through a clean, intuitive experience. We're constantly working to improve and add more features, including user reviews and direct feedback.</p>
+
+            <h2>Important disclaimer</h2>
+            <p>Restaurant information, such as hours, menus, and contact details, may change over time. We recommend verifying any important details directly with the restaurant before you visit.</p>
+        </section>
+
+        <!-- Feedback Section -->
+        <section id="feedback" class="feedback-section">
+            <h2>We'd love your feedback!</h2>
+            <p>Have suggestions, found a bug, or just want to say hi? Let us know below.</p>
+
+            <form id="feedback-form" class="feedback-form" novalidate>
+                <div class="form-group">
+                    <label for="feedback-name">Name</label>
+                    <input type="text" id="feedback-name" name="name" maxlength="100" placeholder="Your name (optional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback-email">Email</label>
+                    <input type="email" id="feedback-email" name="email" maxlength="255" placeholder="you@example.com (optional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback-type">Feedback type</label>
+                    <select id="feedback-type" name="type" required>
+                        <option value="">Select a type</option>
+                        <option value="General Feedback">General Feedback</option>
+                        <option value="Bug Report">Bug Report</option>
+                        <option value="Restaurant Information">Restaurant Information</option>
+                        <option value="Suggestion">Suggestion</option>
+                        <option value="UI/UX">UI/UX</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback-message">Message</label>
+                    <textarea id="feedback-message" name="message" rows="5" maxlength="2000" required placeholder="Tell us what you think..."></textarea>
+                </div>
+
+                <button type="submit" class="btn" id="feedback-submit">Send Feedback</button>
+            </form>
+
+            <div id="feedback-success" class="feedback-success" hidden>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Thanks for helping improve Hunger's Hunt!</p>
+            </div>
+
+            <div id="feedback-error" class="feedback-error" hidden></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Hunger's Hunt. All rights reserved.</p>
+    </footer>
+
+    <script src="js/about.js" defer></script>
+</body>
+</html>
