@@ -65,7 +65,7 @@ async function initRestaurantsPage() {
                 }
             } else {
                 await restaurantsReady;
-                const response = await fetch(`/api/restaurants${searchTerm ? `?search=${encodeURIComponent(searchTerm)}` : ""}`, { signal: activeController.signal });
+                const response = await fetch(`${apiUrl("restaurants")}${searchTerm ? `?search=${encodeURIComponent(searchTerm)}` : ""}`, { signal: activeController.signal });
                 if (!response.ok) throw new Error("API error");
                 data = await response.json();
                 if (filter === "featured") data = data.filter(record => record.featured);

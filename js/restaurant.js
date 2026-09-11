@@ -27,7 +27,7 @@ async function initRestaurantPage() {
             const localRestaurantId = Number(restaurantId);
             restaurant = restaurants.find(record => record.id === localRestaurantId);
             if (!restaurant && Number.isInteger(localRestaurantId) && localRestaurantId > 0) {
-                const response = await fetch(`/api/restaurants/${localRestaurantId}`);
+                const response = await fetch(apiUrl(`restaurants/${localRestaurantId}`));
                 if (response.ok) restaurant = await response.json();
             }
         }

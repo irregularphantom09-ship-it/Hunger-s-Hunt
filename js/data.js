@@ -1,8 +1,7 @@
 let restaurants = [];
-const API_BASE = "/api";
 
 async function loadFromApi() {
-    const response = await fetch(`${API_BASE}/restaurants`);
+    const response = await fetch(apiUrl("restaurants"));
     if (!response.ok) throw new Error(`HTTP error ${response.status}`);
     return response.json();
 }
@@ -41,14 +40,14 @@ async function searchFoursquareRestaurants({ near, ll, search, category, radius,
     params.set("provider", "foursquare");
     if (openNow) params.set("openNow", "true");
 
-    const response = await fetch(`${API_BASE}/restaurants/search?${params.toString()}`, { signal });
+    const response = await fetch(`${apiUrl("restaurants/search")}?${params.toString()}`, { signal });
     const body = await response.json().catch(() => ({}));
     if (!response.ok) throw new Error(body.error || `HTTP error ${response.status}`);
     return Array.isArray(body) ? body : [];
 }
 
 async function loadFoursquarePlace(fsqPlaceId) {
-    const response = await fetch(`${API_BASE}/foursquare/places/${encodeURIComponent(fsqPlaceId)}`);
+    const response = await fetch(apiUrl(`foursquare/places/${encodeURIComponent(fsqPlaceId)}`));
     const body = await response.json().catch(() => ({}));
     if (!response.ok) throw new Error(body.error || `HTTP error ${response.status}`);
     return body;
@@ -65,7 +64,7 @@ async function searchOsmRestaurants({ near, ll, search, category, radius, limit,
     });
 
     params.set("provider", "osm");
-    const response = await fetch(`${API_BASE}/restaurants/search?${params.toString()}`, { signal });
+    const response = await fetch(`${apiUrl("restaurants/search")}?${params.toString()}`, { signal });
     const body = await response.json().catch(() => ({}));
     if (!response.ok) throw new Error(body.error || `HTTP error ${response.status}`);
     return Array.isArray(body) ? body : [];
@@ -76,14 +75,14 @@ async function getRestaurantSuggestions({ near, query, provider = "osm", signal 
     if (near) params.set("near", near);
     if (query) params.set("query", query);
 
-    const response = await fetch(`${API_BASE}/restaurants/suggestions?${params.toString()}`, { signal });
+    const response = await fetch(`${apiUrl("restaurants/suggestions")}?${params.toString()}`, { signal });
     const body = await response.json().catch(() => ({}));
     if (!response.ok) throw new Error(body.error || `HTTP error ${response.status}`);
     return Array.isArray(body) ? body : [];
 }
 
 async function loadOsmPlace(osmPlaceId) {
-    const response = await fetch(`${API_BASE}/osm/places/${encodeURIComponent(osmPlaceId)}`);
+    const response = await fetch(apiUrl(`osm/places/${encodeURIComponent(osmPlaceId)}`));
     const body = await response.json().catch(() => ({}));
     if (!response.ok) throw new Error(body.error || `HTTP error ${response.status}`);
     return body;

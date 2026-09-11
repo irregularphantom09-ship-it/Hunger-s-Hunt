@@ -36,7 +36,7 @@ async function initCategoryPage() {
         restaurantContainer.innerHTML = `<div class="page-loading" role="status"><span class="pacman-loader" aria-hidden="true"><span></span><span></span><span></span><span></span></span><p>Loading ${escapeHtml(selectedCategory)} restaurants...</p></div>`;
 
         try {
-            let url = `/api/restaurants?category=${encodeURIComponent(selectedCategory)}`;
+            let url = `${apiUrl("restaurants")}?category=${encodeURIComponent(selectedCategory)}`;
             if (searchTerm.trim() !== "") {
                 url += `&search=${encodeURIComponent(searchTerm.trim())}`;
             }

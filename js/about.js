@@ -50,7 +50,7 @@ form.addEventListener("submit", async (event) => {
     error.hidden = true;
 
     try {
-        const response = await fetch('/api/feedback', {
+        const response = await fetch(apiUrl("feedback"), {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
